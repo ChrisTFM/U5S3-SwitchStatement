@@ -1,5 +1,7 @@
 package partA.ex01;
 
+import java.util.Scanner;
+
 public class Switch {
 
     public static String switchStatement(){
