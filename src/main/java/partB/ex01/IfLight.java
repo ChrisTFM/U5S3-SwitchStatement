@@ -10,14 +10,14 @@ public class IfLight {
         currentColor = scan.nextInt();
 
         if (currentColor == 1) {
-
+            response = "Next Traffic Light is green";
         } else if (currentColor == 2) {
-
+            response = "Next Traffic Light is yellow";
         } else if (currentColor == 3) {
-
+            response = "Next Traffic Light is red";
         }
         else {
-
+            response = "Invalid color";
         }
 
 
