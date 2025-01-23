@@ -14,11 +14,6 @@ public class AlgoChallenge {
      dogTrouble(true, false) --> false
     */
 
-    public static Boolean dogTrouble(boolean bulldogGrowl, boolean labGrowl) {
-
-        return null;
-    }
-
     /* Problem 13
     We have a loud crying puppy in an apartment building. The "hour" parameter is the current hour time
      in the range 0...23. We will get in trouble if the puppy is crying and the time is before 7 or after 20.
@@ -31,8 +26,20 @@ public class AlgoChallenge {
      puppyCry(false, 6) --> false
      */
 
-    public static Boolean puppyCry(boolean crying, int hour) {
+    public static Boolean dogTrouble(boolean bulldogGrowl, boolean labGrowl) {
+        if (bulldogGrowl == labGrowl) {return Boolean.TRUE;}
+        return Boolean.FALSE;
+    }
 
-        return null;
+
+    public static Boolean puppyCry(boolean crying, int hour) {
+        if (crying == Boolean.FALSE) {return Boolean.FALSE;}
+        if (hour < 7 || hour > 20){return Boolean.TRUE;}
+        return Boolean.FALSE;
+    }
+
+    public static void main(String[] args){
+        System.out.println(dogTrouble(Boolean.FALSE,Boolean.TRUE));
+        System.out.println(puppyCry(Boolean.TRUE, 12));
     }
 }

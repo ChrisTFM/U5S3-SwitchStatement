@@ -22,6 +22,9 @@ public class SwitchLight {
             case (3):
                 response = "Next Traffic Light is red";
                 break;
+            default:
+                response = "Invalid";
+                break;
         }
         /* Put your code in between these comments : Bottom */
 
